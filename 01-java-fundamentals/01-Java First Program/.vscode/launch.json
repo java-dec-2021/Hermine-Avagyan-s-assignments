@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AboutCodingDojo",
+            "request": "launch",
+            "mainClass": "AboutCodingDojo"
+        }
+    ]
+}
