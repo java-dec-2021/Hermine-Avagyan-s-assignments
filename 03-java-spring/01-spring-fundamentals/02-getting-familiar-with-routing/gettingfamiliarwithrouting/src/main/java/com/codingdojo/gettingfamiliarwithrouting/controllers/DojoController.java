@@ -4,39 +4,43 @@ import java.util.Optional;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 //import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class DojoController {
 	//@SuppressWarnings("unlikely-arg-type")
-	@GetMapping(value = {"/dojo","/dojo/{cityName}"})
+	//@GetMapping(value = {"/dojo","/dojo/{cityName}"})
 	//@ResponseBody
 	//@GetMapping("/dojo/{cityName}")
-	public String showDojoCity(@PathVariable Optional<String>  cityName){
+	
+	
+	@RequestMapping(value = {"/dojo","/dojo/{cityName}"})
+	public void showDojoCity(@PathVariable(required = false) String cityName){
 		
 		
 		
-		//if((cityName.isPresent())) {
-			
-			System.out.print(cityName);
+		if(cityName != null) {
 			if(cityName.equals("Burbank")) {
-				return "Burbank dojo is located in Southern California "; 
+				System.out.println("Burbank dojo is located in Southern California "); 
 				
 			}
+			if (cityName.equals("SanJose")) { 
+				System.out.println("San Jose dojo is the headquaters");
+				}
 			
-			else if (cityName.equals("Chicago")) { 
-				return "Chicago dojo is the headquaters"; }
-				
-			
-		 
-		else {
-			return "The dojo is awesome";}
-			
+		}
 		
+	else {
+		System.out.println("The dojo is awesome");
+	
+}}}
+			
+	
 	
 		
-	}
+
 		
 		
 				  
@@ -44,7 +48,7 @@ public class DojoController {
 		
 	
 	
-	}
+	
 	
 		
 	

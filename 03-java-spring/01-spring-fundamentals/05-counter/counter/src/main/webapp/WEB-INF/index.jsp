@@ -8,10 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Thanks <c:out value="${firstName}"></c:out> for choosing <c:out value="${language}"></c:out></h1>
-<p>Your Dojo location is <c:out value="${location}"></c:out> </p>
 
-<p>Here are your comments " <c:out value="${comment}"></c:out> "</p>
-<p><a href = "/">Go Back</a></p>
 </body>
 </html>
