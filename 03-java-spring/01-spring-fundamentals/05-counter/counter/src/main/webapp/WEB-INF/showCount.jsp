@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-the count is <c:out value="${countToShow}"></c:out>
+You have visited  " <c:out value="${string}"></c:out> " site <c:out value="${countToShow}"></c:out> times.
+<a href ="/reset">Test another visit</a>
 </body>
 </html>

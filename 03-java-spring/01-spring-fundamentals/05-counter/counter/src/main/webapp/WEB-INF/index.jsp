@@ -9,5 +9,7 @@
 </head>
 <body>
 
+Welcome back!
+ <c:out value="${count}"></c:out>
 </body>
 </html>
