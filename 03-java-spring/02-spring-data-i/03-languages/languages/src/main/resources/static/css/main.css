@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.form-group > span {
+	display: block;
+	color: red;
+	font-weight: bold;
+}
+#delete-form {
+	display: inline-block;
+}
